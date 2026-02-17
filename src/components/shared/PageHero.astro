@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  dark?: boolean;
+}
+
+const { title, subtitle, dark = false } = Astro.props;
+---
+
+<section class={`py-20 lg:py-28 ${dark ? 'bg-gradient-to-br from-panel-dark via-primary-900 to-primary' : 'bg-white'}`}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class={`text-4xl sm:text-5xl font-bold mb-4 ${dark ? 'text-white' : 'text-text-primary'}`}>{title}</h1>
+    <p class={`text-lg max-w-2xl mx-auto ${dark ? 'text-gray-300' : 'text-text-muted'}`}>{subtitle}</p>
+    <slot />
+  </div>
+</section>

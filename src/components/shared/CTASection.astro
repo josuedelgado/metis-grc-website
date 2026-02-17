@@ -1,0 +1,25 @@
+---
+import { SITE } from '../../lib/constants';
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const { title = 'Ready to Get Started?', subtitle = 'Simplify your cybersecurity GRC with Metis.' } = Astro.props;
+---
+
+<section class="py-16 bg-gradient-to-r from-primary to-primary-700">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-2xl font-bold text-white mb-3">{title}</h2>
+    <p class="text-primary-200 mb-6">{subtitle}</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href={`${SITE.appUrl}/register`} class="bg-secondary hover:bg-secondary-600 text-white font-medium px-6 py-3 rounded-lg transition-colors">
+        Start Free Trial
+      </a>
+      <a href="/contact" class="bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 rounded-lg transition-colors border border-white/20">
+        Contact Sales
+      </a>
+    </div>
+  </div>
+</section>

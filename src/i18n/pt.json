@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "product": "Produto",
+    "about": "Sobre",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "signIn": "Entrar",
+    "requestDemo": "Pedir Demo",
+    "startTrial": "Teste Gratuito"
+  },
+  "hero": {
+    "badge": "Disponível — Alojado na UE",
+    "title": "Plataforma Unificada de",
+    "titleHighlight": "GRC Cibersegurança",
+    "subtitle": "NIS2, ISO 27001, NIST CSF 2.0, CIS Controls — uma plataforma, com inteligência artificial. Simplifique a governança, risco e conformidade da sua organização.",
+    "cta": "Teste Gratuito",
+    "ctaSecondary": "Agendar Demo"
+  },
+  "footer": {
+    "description": "Plataforma unificada de governança, risco e conformidade em cibersegurança. Com IA. Alojado na UE.",
+    "copyright": "Todos os direitos reservados."
+  }
+}

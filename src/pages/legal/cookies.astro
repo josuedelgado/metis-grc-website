@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getEntry, render } from 'astro:content';
+
+const entry = await getEntry('legal', 'cookies');
+const { Content } = await render(entry!);
+---
+
+<BaseLayout title="Cookie Policy" description="Metis GRC Cookie Policy — how we use cookies on our website.">
+  <article class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none prose-headings:text-text-primary prose-p:text-text-muted prose-a:text-primary prose-strong:text-text-primary prose-ul:text-text-muted prose-li:marker:text-primary prose-hr:border-border">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

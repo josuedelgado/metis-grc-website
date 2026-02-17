@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/shared/PageHero.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const categories = ['All', 'NIS2', 'ISO 27001', 'AI in GRC', 'Product Updates', 'Industry'] as const;
+---
+
+<BaseLayout title="Blog" description="Insights on cybersecurity GRC, NIS2 compliance, AI in governance, and product updates from the Metis GRC team.">
+  <PageHero title="Blog" subtitle="Insights on cybersecurity GRC, compliance, and product updates." />
+
+  <section class="py-16 bg-background">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Category Filter -->
+      <div class="flex flex-wrap gap-2 mb-10">
+        {categories.map((cat) => (
+          <button
+            class="text-sm px-4 py-1.5 rounded-full border border-border bg-white text-text-muted hover:text-primary hover:border-primary/30 transition-colors"
+            data-category={cat}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <!-- Posts Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map((post) => (
+          <article class="bg-white rounded-[12px] shadow-card hover:shadow-card-hover transition-shadow overflow-hidden" data-post-category={post.data.category}>
+            <div class="aspect-video bg-gradient-to-br from-primary-50 to-secondary-50 flex items-center justify-center">
+              <span class="text-xs text-text-muted">{post.data.category}</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-xs bg-primary-50 text-primary-700 rounded-full px-2.5 py-0.5 font-medium">{post.data.category}</span>
+                <span class="text-xs text-text-muted">{post.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+              </div>
+              <h2 class="text-base font-semibold text-text-primary mb-2 line-clamp-2">
+                <a href={`/blog/${post.id}`} class="hover:text-primary transition-colors">{post.data.title}</a>
+              </h2>
+              <p class="text-sm text-text-muted line-clamp-3">{post.data.description}</p>
+              <div class="mt-4 pt-3 border-t border-border">
+                <span class="text-xs text-text-muted">{post.data.author}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {posts.length === 0 && (
+        <div class="text-center py-16">
+          <p class="text-text-muted">No posts yet. Stay tuned!</p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

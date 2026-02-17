@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/shared/PageHero.astro';
+import CTASection from '../../components/shared/CTASection.astro';
+import AnimatedSection from '../../components/shared/AnimatedSection.tsx';
+---
+
+<BaseLayout title="NIS2 Compliance" description="Purpose-built NIS2 compliance module with country-specific applicability, obligations catalog, and incident reporting workflows.">
+  <PageHero title="NIS2 Compliance Made Simple" subtitle="From applicability assessment to incident reporting — the most comprehensive NIS2 module on the market." dark />
+
+  <!-- Key Features -->
+  <section class="py-20 bg-background">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- Applicability Wizard -->
+      <AnimatedSection client:visible>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-success-50 rounded-full px-3 py-1 text-xs font-medium text-success-600 mb-4">Step 1</div>
+            <h2 class="text-2xl font-bold text-text-primary mb-3">Country-Specific Applicability Wizard</h2>
+            <p class="text-text-muted leading-relaxed mb-4">
+              A 5-step guided questionnaire determines your organization's NIS2 classification — essential entity, important entity, or not in scope. Considers country-specific transposition details.
+            </p>
+            <ul class="space-y-2">
+              {['Sector & sub-sector identification', 'Size thresholds per country', 'Essential vs. Important classification', 'PDF applicability report'].map((f) => (
+                <li class="flex items-center gap-2 text-sm text-text-primary">
+                  <svg class="w-4 h-4 text-success shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  {f}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="bg-white rounded-2xl border border-border shadow-card p-4">
+            <div class="aspect-video bg-gradient-to-br from-success-50 to-primary-50 rounded-xl flex items-center justify-center">
+              <span class="text-sm text-text-muted">Screenshot — NIS2 Wizard</span>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      <!-- Obligations Catalog -->
+      <AnimatedSection client:visible>
+        <div class="grid md:grid-cols-2 gap-8 items-center md:grid-flow-dense">
+          <div class="md:col-start-2">
+            <div class="inline-flex items-center gap-2 bg-secondary-50 rounded-full px-3 py-1 text-xs font-medium text-secondary-600 mb-4">Step 2</div>
+            <h2 class="text-2xl font-bold text-text-primary mb-3">Obligations Catalog</h2>
+            <p class="text-text-muted leading-relaxed mb-4">
+              Complete catalog of NIS2 obligations mapped to articles, with country-specific variations. Track compliance status per obligation and link controls and evidence.
+            </p>
+            <ul class="space-y-2">
+              {['Article-by-article breakdown', 'Country profile variations', 'Control & evidence linking', 'Compliance scoring per obligation'].map((f) => (
+                <li class="flex items-center gap-2 text-sm text-text-primary">
+                  <svg class="w-4 h-4 text-success shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  {f}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="md:col-start-1 bg-white rounded-2xl border border-border shadow-card p-4">
+            <div class="aspect-video bg-gradient-to-br from-secondary-50 to-primary-50 rounded-xl flex items-center justify-center">
+              <span class="text-sm text-text-muted">Screenshot — Obligations</span>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      <!-- Incident Workflow -->
+      <AnimatedSection client:visible>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-critical-50 rounded-full px-3 py-1 text-xs font-medium text-critical-600 mb-4">Step 3</div>
+            <h2 class="text-2xl font-bold text-text-primary mb-3">Incident Reporting Workflow</h2>
+            <p class="text-text-muted leading-relaxed mb-4">
+              NIS2 mandates strict incident reporting timelines. Metis GRC automates the workflow with built-in deadlines, authority reporting templates, and status tracking.
+            </p>
+            <div class="bg-white rounded-xl border border-border p-4 space-y-3">
+              {[
+                { time: '24 hours', label: 'Early Warning', desc: 'Initial notification to competent authority' },
+                { time: '72 hours', label: 'Incident Notification', desc: 'Detailed assessment including severity and impact' },
+                { time: '1 month', label: 'Final Report', desc: 'Root cause analysis and remediation measures' },
+              ].map((step) => (
+                <div class="flex items-start gap-3">
+                  <div class="bg-critical-50 text-critical font-mono text-xs font-bold rounded px-2 py-1 shrink-0 mt-0.5">{step.time}</div>
+                  <div>
+                    <div class="text-sm font-medium text-text-primary">{step.label}</div>
+                    <div class="text-xs text-text-muted">{step.desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl border border-border shadow-card p-4">
+            <div class="aspect-video bg-gradient-to-br from-critical-50 to-warning-50 rounded-xl flex items-center justify-center">
+              <span class="text-sm text-text-muted">Screenshot — Incident Workflow</span>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+    </div>
+  </section>
+
+  <CTASection title="Start Your NIS2 Assessment" subtitle="Determine your applicability and track compliance from day one." />
+</BaseLayout>

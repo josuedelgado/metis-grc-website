@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "product": "Product",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "signIn": "Sign In",
+    "requestDemo": "Request Demo",
+    "startTrial": "Start Free Trial"
+  },
+  "hero": {
+    "badge": "Now Live — EU Hosted",
+    "title": "Unified Cybersecurity",
+    "titleHighlight": "GRC Platform",
+    "subtitle": "NIS2, ISO 27001, NIST CSF 2.0, CIS Controls — one platform, AI-powered. Simplify governance, risk, and compliance for your organization.",
+    "cta": "Start Free Trial",
+    "ctaSecondary": "Book a Demo"
+  },
+  "footer": {
+    "description": "Unified cybersecurity governance, risk, and compliance platform. AI-powered. EU-hosted.",
+    "copyright": "All rights reserved."
+  }
+}
