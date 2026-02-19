@@ -1,6 +1,11 @@
 {
   "nav": {
     "product": "Produto",
+    "productOverview": "Visão Geral",
+    "productAi": "Assistentes IA",
+    "productNis2": "Conformidade NIS2",
+    "productFrameworks": "Frameworks",
+    "productVendorRisk": "Risco de Fornecedores",
     "about": "Sobre",
     "blog": "Blog",
     "contact": "Contacto",
@@ -8,16 +13,508 @@
     "requestDemo": "Pedir Demo",
     "startTrial": "Teste Gratuito"
   },
-  "hero": {
-    "badge": "Disponível — Alojado na UE",
-    "title": "Plataforma Unificada de",
-    "titleHighlight": "GRC Cibersegurança",
-    "subtitle": "NIS2, ISO 27001, NIST CSF 2.0, CIS Controls — uma plataforma, com inteligência artificial. Simplifique a governança, risco e conformidade da sua organização.",
-    "cta": "Teste Gratuito",
-    "ctaSecondary": "Agendar Demo"
-  },
   "footer": {
     "description": "Plataforma unificada de governança, risco e conformidade em cibersegurança. Com IA. Alojado na UE.",
+    "euHosted": "Alojado na UE",
+    "gdprCompliant": "Conforme com o RGPD",
+    "product": "Produto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "aboutUs": "Sobre Nós",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço",
+    "cookiePolicy": "Política de Cookies",
     "copyright": "Todos os direitos reservados."
+  },
+  "cookie": {
+    "text": "Utilizamos cookies para melhorar a sua experiência e analisar o tráfego do site. Consulte a nossa",
+    "policyLink": "Política de Cookies",
+    "decline": "Recusar",
+    "accept": "Aceitar"
+  },
+  "cta": {
+    "title": "Pronto para Começar?",
+    "subtitle": "Simplifique o GRC de cibersegurança com a Metis.",
+    "trial": "Teste Gratuito",
+    "sales": "Contactar Vendas"
+  },
+  "404": {
+    "pageTitle": "Página Não Encontrada",
+    "title": "Página Não Encontrada",
+    "subtitle": "A página que procura não existe ou foi movida.",
+    "back": "Voltar ao Início"
+  },
+  "home": {
+    "title": "Metis GRC",
+    "hero": {
+      "badge": "Disponível — Alojado na UE",
+      "title": "Plataforma Unificada de",
+      "titleHighlight": "GRC Cibersegurança",
+      "subtitle": "NIS2, ISO 27001, NIST CSF 2.0, CIS Controls — uma plataforma, com inteligência artificial. Simplifique a governança, risco e conformidade da sua organização.",
+      "cta": "Teste Gratuito",
+      "ctaSecondary": "Agendar Demo"
+    },
+    "dashboard": {
+      "compliance": "Conformidade",
+      "openRisks": "Riscos Abertos",
+      "controls": "Controlos",
+      "vendors": "Fornecedores"
+    },
+    "socialProof": {
+      "euHosted": "Alojado na UE",
+      "gdprCompliant": "Conforme com o RGPD",
+      "soc2Ready": "SOC 2 Ready",
+      "uptimeSla": "99.9% Uptime SLA"
+    },
+    "problem": {
+      "title": "O Desafio do GRC",
+      "subtitle": "As organizações enfrentam uma complexidade regulatória crescente, mas a maioria ainda depende de processos fragmentados e manuais.",
+      "cards": [
+        {
+          "title": "Complexidade Regulatória",
+          "desc": "NIS2, ISO 27001, NIST, CIS — cada um com requisitos, controlos e relatórios diferentes. Geri-los separadamente é insustentável."
+        },
+        {
+          "title": "Ferramentas Dispersas",
+          "desc": "Folhas de cálculo, emails, pastas partilhadas — os dados de GRC estão em todo o lado. Sem uma fonte única de verdade, surgem falhas e insucessos em auditorias."
+        },
+        {
+          "title": "Conformidade Manual",
+          "desc": "Recolha de evidências, avaliação de controlos, pontuação de risco — horas de trabalho manual. A NIS2 exige reportar incidentes em 24h. O processo manual não consegue acompanhar."
+        }
+      ]
+    },
+    "solution": {
+      "title": "Uma Plataforma. GRC Completo.",
+      "subtitle": "A Metis GRC unifica frameworks, riscos, controlos, evidências e relatórios numa única plataforma com IA.",
+      "pills": [
+        { "label": "Motor Multi-Framework", "desc": "NIS2, ISO, NIST, CIS num só lugar" },
+        { "label": "Assistentes IA", "desc": "9 assistentes IA para cada tarefa de GRC" },
+        { "label": "Especialista NIS2", "desc": "Assistente de conformidade específico por país" },
+        { "label": "Risco de Fornecedores", "desc": "Avaliação e pontuação de terceiros" }
+      ]
+    },
+    "features": {
+      "title": "Tudo o Que Precisa",
+      "subtitle": "Dos registos de risco aos trilhos de auditoria, a Metis GRC cobre todo o ciclo de vida da conformidade.",
+      "cards": [
+        {
+          "title": "Registo de Riscos",
+          "desc": "Registos de risco empresarial, TI, fornecedores e projetos com pontuação de probabilidade/impacto, mapas de calor e planos de tratamento."
+        },
+        {
+          "title": "Biblioteca de Controlos",
+          "desc": "Controlos centralizados mapeados entre frameworks. Acompanhe o estado de implementação, associe evidências e identifique lacunas."
+        },
+        {
+          "title": "Repositório de Evidências",
+          "desc": "Carregue, classifique e associe automaticamente evidências a controlos. Etiquetagem com IA e OCR para processamento de documentos."
+        },
+        {
+          "title": "Gestão de Incidentes",
+          "desc": "Fluxos de trabalho conformes com a NIS2 e prazos de reporte de 24h/72h. Acompanhe incidentes desde a deteção até à resolução."
+        },
+        {
+          "title": "Painéis de Conformidade",
+          "desc": "Vistas executivas e operacionais. Pontuações de conformidade em tempo real, tendências de risco e estado dos frameworks num relance."
+        },
+        {
+          "title": "Administração Empresarial",
+          "desc": "Arquitetura multi-tenant, SSO/SAML, RBAC com mais de 10 perfis, registo de auditoria e integrações via API."
+        }
+      ]
+    },
+    "ai": {
+      "title": "IA em Todo o Lado",
+      "subtitle": "Nove assistentes IA integrados em toda a plataforma — desde Q&A regulatório até análise preditiva de conformidade.",
+      "assistants": [
+        { "title": "Q&A Regulatório", "desc": "Faça perguntas sobre frameworks em linguagem natural. Obtenha respostas instantâneas e referenciadas." },
+        { "title": "Explicação de Controlos", "desc": "Compreenda o que cada controlo significa e como implementá-lo no seu contexto." },
+        { "title": "Assistência na Avaliação", "desc": "A IA propõe níveis de maturidade com justificação baseada nas suas evidências." },
+        { "title": "Classificação de Evidências", "desc": "Etiquetagem automática de documentos carregados com controlos e níveis de sensibilidade relevantes." },
+        { "title": "Mapeamento entre Frameworks", "desc": "Descubra automaticamente equivalências de controlos entre NIS2, ISO, NIST e CIS." },
+        { "title": "Planeamento de Remediação", "desc": "Gere planos de ação priorizados com responsáveis, estimativas de esforço e prazos." },
+        { "title": "Geração de Relatórios", "desc": "Elabore sumários executivos e relatórios de conformidade prontos para a administração em minutos." },
+        { "title": "Recomendações de Risco", "desc": "Identificação de riscos contextualizada com base no seu panorama de ativos e controlos." },
+        { "title": "Análise Preditiva de Lacunas", "desc": "Sistema de alerta precoce para degradação de conformidade e áreas de risco emergentes." }
+      ],
+      "learnMore": "Saber mais sobre os Assistentes IA"
+    },
+    "comparison": {
+      "title": "Porquê a Metis GRC?",
+      "subtitle": "Veja como uma plataforma GRC especializada se compara às abordagens tradicionais."
+    },
+    "testimonials": {
+      "title": "A Confiança dos Líderes de Segurança",
+      "items": [
+        { "quote": "A Metis GRC transformou a forma como gerimos a conformidade multi-framework. O que demorava semanas, agora demora horas.", "name": "Em Breve", "role": "CISO" },
+        { "quote": "Os assistentes IA são uma revolução — especialmente para classificação de evidências e mapeamento entre frameworks.", "name": "Em Breve", "role": "Gestor de GRC" },
+        { "quote": "Finalmente, uma plataforma construída de raiz para a NIS2. Só o fluxo de reporte de incidentes já nos poupou inúmeras horas.", "name": "Em Breve", "role": "Responsável de Conformidade" }
+      ]
+    },
+    "ctaBanner": {
+      "title": "Pronto para Simplificar o GRC?",
+      "subtitle": "Junte-se às organizações que confiam na Metis GRC para governança, risco e conformidade unificados em cibersegurança.",
+      "trial": "Teste Gratuito",
+      "sales": "Falar com Vendas"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre Nós",
+      "description": "A Metis GRC é uma startup de cibersegurança a construir o futuro da governança, risco e conformidade. Sediada em Portugal, ao serviço da Europa."
+    },
+    "hero": {
+      "title": "A Construir o Futuro do GRC em Cibersegurança",
+      "subtitle": "Somos profissionais de cibersegurança que viveram os desafios da conformidade na primeira pessoa — e construímos a Metis GRC para os resolver."
+    },
+    "mission": {
+      "title": "A Nossa Missão",
+      "p1": "As organizações não deveriam ter de escolher entre segurança e simplicidade. Fazemos a ponte entre a complexidade regulatória e a realidade operacional com uma plataforma com IA que torna o GRC de cibersegurança acessível, eficiente e acionável.",
+      "p2": "A Metis GRC nasceu da frustração de gerir conformidade multi-framework com folhas de cálculo, ferramentas dispersas e processos manuais. Acreditamos que há uma forma melhor — e estamos a construí-la."
+    },
+    "values": {
+      "title": "O Que Defendemos",
+      "items": [
+        {
+          "title": "Segurança em Primeiro Lugar",
+          "desc": "Praticamos o que pregamos. A nossa plataforma é construída com segurança de nível empresarial — encriptação em repouso e em trânsito, isolamento ao nível da linha e registo abrangente de auditoria."
+        },
+        {
+          "title": "Orientados por IA",
+          "desc": "Acreditamos que a IA deve amplificar a experiência humana, não substituí-la. Os nossos nove assistentes tratam do trabalho pesado para que as equipas se concentrem nas decisões estratégicas que importam."
+        },
+        {
+          "title": "ADN Europeu",
+          "desc": "Construída em Portugal, alojada na UE, concebida para a realidade regulatória europeia. Compreendemos a NIS2, o RGPD e o panorama de conformidade da UE por dentro."
+        },
+        {
+          "title": "Obcecados pelo Cliente",
+          "desc": "Cada funcionalidade começa com um problema real enfrentado por CISOs, gestores de GRC e responsáveis de conformidade. Construímos o que os profissionais realmente precisam."
+        }
+      ]
+    },
+    "team": {
+      "title": "A Nossa Equipa",
+      "p1": "A nossa equipa traz mais de <strong>20 anos de experiência em cibersegurança</strong> em consultoria, saúde, serviços financeiros, utilities e muito mais. Liderámos programas de GRC, gerímos auditorias de conformidade, respondemos a incidentes e avaliámos centenas de fornecedores.",
+      "p2": "Vivemos os desafios da conformidade na primeira pessoa — as folhas de cálculo intermináveis, o trabalho duplicado entre frameworks, a corrida para cumprir prazos de reporte. A Metis GRC é a plataforma que gostaríamos de ter tido."
+    },
+    "location": {
+      "badge": "Sediados em Portugal",
+      "title": "Sediados em Portugal, ao Serviço da Europa",
+      "desc": "A nossa plataforma está inteiramente alojada na União Europeia, assegurando total conformidade de residência de dados. Construída para o panorama regulatório europeu, concebida com ambição global."
+    },
+    "cta": {
+      "title": "Junte-se à Nossa Missão",
+      "subtitle": "Ajude organizações a simplificar a governança, risco e conformidade em cibersegurança."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contacto",
+      "description": "Entre em contacto com a Metis GRC — agende uma demo, coloque questões ou explore oportunidades de parceria."
+    },
+    "hero": {
+      "title": "Entre em Contacto",
+      "subtitle": "Agende uma demo, coloque questões ou descubra como a Metis GRC pode ajudar a sua organização."
+    },
+    "form": {
+      "title": "Envie-nos uma mensagem",
+      "name": "Nome *",
+      "namePlaceholder": "O seu nome",
+      "company": "Empresa *",
+      "companyPlaceholder": "A sua empresa",
+      "email": "Email *",
+      "emailPlaceholder": "you@company.com",
+      "interest": "Tenho interesse em...",
+      "interestOptions": {
+        "demo": "Agendar uma Demo",
+        "trial": "Teste Gratuito",
+        "partnership": "Parceria",
+        "other": "Outro"
+      },
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-nos sobre as suas necessidades de GRC...",
+      "submit": "Enviar Mensagem"
+    },
+    "info": {
+      "title": "Informações de Contacto",
+      "email": "Email",
+      "location": "Localização",
+      "locationValue": "Portugal, União Europeia"
+    },
+    "quickStart": {
+      "title": "Início Rápido",
+      "desc": "Quer começar já? Inicie um teste gratuito — sem necessidade de cartão de crédito.",
+      "cta": "Teste Gratuito"
+    },
+    "partners": {
+      "title": "Para Parceiros",
+      "desc": "Interessado em parcerias de integração, programas de revenda ou colaborações de consultoria? Gostaríamos de o ouvir."
+    }
+  },
+  "product": {
+    "meta": {
+      "title": "Produto",
+      "description": "Explore a plataforma Metis GRC — motor de frameworks unificado, assistentes IA, gestão de risco, avaliação de fornecedores e painéis de conformidade."
+    },
+    "hero": {
+      "title": "Tudo o Que Precisa para GRC de Cibersegurança",
+      "subtitle": "Uma plataforma completa que unifica frameworks, riscos, controlos, evidências e relatórios — com IA."
+    },
+    "learnMore": "Saber mais",
+    "screenshotAlt": "Captura de ecrã",
+    "modules": [
+      {
+        "title": "Motor Multi-Framework",
+        "desc": "Ative NIS2, ISO 27001, NIST CSF 2.0, CIS Controls ou crie frameworks personalizados. Mapeie controlos entre normas, identifique sobreposições e elimine trabalho redundante.",
+        "features": ["Suporte NIS2, ISO, NIST, CIS", "Mapeamento de controlos entre frameworks", "Construtor de frameworks personalizados", "Acompanhamento de obrigações"]
+      },
+      {
+        "title": "Assistentes IA",
+        "desc": "Nove assistentes IA integrados em toda a plataforma. Desde Q&A regulatório até análise preditiva de lacunas — a IA trata do trabalho pesado para que a sua equipa se foque nas decisões.",
+        "features": ["Q&A regulatório", "Classificação de evidências", "Mapeamento entre frameworks", "Geração de relatórios"]
+      },
+      {
+        "title": "Gestão de Risco e Controlos",
+        "desc": "Registos de risco empresarial, TI, fornecedores e projetos. Biblioteca centralizada de controlos com acompanhamento de implementação, associação de evidências e análise de lacunas.",
+        "features": ["Registos de risco com pontuação", "Fluxos de planos de tratamento", "Acompanhamento do estado dos controlos", "Mapas de calor e painéis"]
+      },
+      {
+        "title": "Conformidade NIS2",
+        "desc": "Módulo NIS2 especializado com assistente de aplicabilidade por país, catálogo de obrigações, fluxos de incidentes com reporte em 24h/72h e acompanhamento de governança.",
+        "features": ["Assistente específico por país", "Catálogo de obrigações", "Fluxo de incidentes 24h/72h", "Acompanhamento de governança"]
+      },
+      {
+        "title": "Gestão de Risco de Fornecedores",
+        "desc": "Avalie e monitorize o risco de terceiros com registos de fornecedores, questionários dinâmicos, pontuação de risco com IA e acompanhamento de postura associado aos seus controlos.",
+        "features": ["Registo de fornecedores", "Questionários dinâmicos", "Pontuação de risco com IA", "Fluxos de avaliação"]
+      },
+      {
+        "title": "Evidências e Auditoria",
+        "desc": "Carregue, classifique e associe evidências a controlos. Etiquetagem com IA, processamento OCR e um trilho de auditoria completo para cada ação na plataforma.",
+        "features": ["Repositório de evidências", "Classificação com IA", "Etiquetagem multi-framework", "Trilho de auditoria completo"]
+      }
+    ]
+  },
+  "productAi": {
+    "meta": {
+      "title": "Assistentes IA",
+      "description": "Nove assistentes IA integrados na Metis GRC — Q&A regulatório, classificação de evidências, mapeamento entre frameworks e muito mais."
+    },
+    "comingSoon": "Em Breve",
+    "hero": {
+      "title": "Inteligência GRC com IA",
+      "subtitle": "Nove assistentes integrados em toda a plataforma. Os seus dados ficam na UE. A IA processa apenas em contexto."
+    },
+    "assistants": [
+      {
+        "title": "Q&A Regulatório",
+        "desc": "Faça perguntas sobre qualquer framework suportado em linguagem natural. Obtenha respostas instantâneas com referências a artigos, controlos e obrigações específicos. Sem mais pesquisas em centenas de páginas de regulamentação.",
+        "example": "\"Quais são os requisitos de reporte de incidentes NIS2 para entidades essenciais na Alemanha?\""
+      },
+      {
+        "title": "Explicação de Controlos",
+        "desc": "Compreenda o que cada controlo significa em termos práticos. A IA explica os requisitos, sugere abordagens de implementação e fornece exemplos adaptados à dimensão e setor da sua organização.",
+        "example": "\"Explique o ISO 27001 A.8.2 e como se aplica a uma empresa SaaS de saúde.\""
+      },
+      {
+        "title": "Assistência na Avaliação",
+        "desc": "Carregue as suas evidências e deixe a IA propor níveis de maturidade/conformidade com justificação detalhada. Acelere avaliações de semanas para dias, mantendo o rigor e a consistência.",
+        "example": "A IA analisa a sua política de controlo de acessos e sugere \"Parcialmente Implementado\" com lacunas específicas identificadas."
+      },
+      {
+        "title": "Classificação de Evidências",
+        "desc": "Deposite documentos no repositório de evidências e a IA etiqueta-os automaticamente com controlos, frameworks e níveis de sensibilidade relevantes. O processamento OCR trata de documentos digitalizados.",
+        "example": "Carregue um relatório de teste de penetração → etiquetagem automática para 5 controlos em NIS2 e ISO 27001."
+      },
+      {
+        "title": "Mapeamento entre Frameworks",
+        "desc": "Descubra equivalências de controlos entre NIS2, ISO 27001, NIST CSF e CIS Controls. Elimine trabalho duplicado mapeando uma única implementação de controlo para múltiplos requisitos de frameworks.",
+        "example": "NIS2 Art. 21(2)(a) ↔ ISO A.5.1 ↔ NIST GV.PO-01 ↔ CIS Control 1"
+      },
+      {
+        "title": "Planeamento de Remediação",
+        "desc": "Gere planos de ação priorizados com responsáveis sugeridos, estimativas de esforço e prazos. A IA considera a sua maturidade atual, recursos disponíveis e prazos regulatórios.",
+        "example": "A IA gera um plano de remediação NIS2 a 90 dias com 23 tarefas distribuídas por 4 vertentes de trabalho."
+      },
+      {
+        "title": "Geração de Relatórios",
+        "desc": "Elabore sumários executivos e relatórios detalhados de conformidade prontos para a administração em minutos. Escolha entre vistas de painel para CISO, relatórios de preparação para auditoria ou formatos de submissão regulatória.",
+        "example": "Gere um briefing de 2 páginas para a administração sobre a prontidão NIS2 com destaques de risco e planos de ação."
+      },
+      {
+        "title": "Recomendações de Risco",
+        "desc": "Com base no inventário de ativos, panorama de controlos e contexto setorial, a IA identifica riscos que poderá não ter considerado. Sugere pontuações de probabilidade e impacto com fundamentação.",
+        "example": "A IA identifica 3 riscos na cadeia de abastecimento com base nas respostas dos questionários dos seus fornecedores."
+      },
+      {
+        "title": "Análise Preditiva de Lacunas",
+        "desc": "Sistema de alerta precoce que monitoriza tendências de conformidade e prevê onde é provável ocorrer degradação. Alerta antes de controlos expirarem, evidências ficarem desatualizadas ou riscos excederem limiares.",
+        "example": "Alerta: 4 controlos previstos para descer abaixo do limiar no T3 com base nas datas de expiração de evidências."
+      }
+    ],
+    "trust": {
+      "title": "Construída para Confiança Empresarial",
+      "items": [
+        { "title": "Residência de Dados na UE", "desc": "Todos os dados são processados e armazenados na União Europeia." },
+        { "title": "IA Apenas em Contexto", "desc": "A IA opera apenas sobre os seus dados — sem treino com conteúdo de clientes." },
+        { "title": "Trilho de Auditoria Completo", "desc": "Cada interação com IA é registada para conformidade e responsabilização." }
+      ]
+    },
+    "cta": {
+      "title": "Assistentes IA — Em Breve",
+      "subtitle": "Experimente o GRC com IA através de um teste gratuito de 14 dias."
+    }
+  },
+  "productNis2": {
+    "meta": {
+      "title": "Conformidade NIS2",
+      "description": "Módulo de conformidade NIS2 especializado com aplicabilidade por país, catálogo de obrigações e fluxos de reporte de incidentes."
+    },
+    "hero": {
+      "title": "Conformidade NIS2 Simplificada",
+      "subtitle": "Da avaliação de aplicabilidade ao reporte de incidentes — o módulo NIS2 mais completo do mercado."
+    },
+    "wizard": {
+      "step": "Passo 1",
+      "title": "Assistente de Aplicabilidade por País",
+      "desc": "Um questionário guiado em 5 passos determina a classificação NIS2 da sua organização — entidade essencial, entidade importante ou fora do âmbito. Considera os detalhes de transposição específicos de cada país.",
+      "features": ["Identificação de setor e subsetor", "Limiares de dimensão por país", "Classificação Essencial vs. Importante", "Relatório de aplicabilidade em PDF"],
+      "screenshot": "Captura de ecrã — Assistente NIS2"
+    },
+    "obligations": {
+      "step": "Passo 2",
+      "title": "Catálogo de Obrigações",
+      "desc": "Catálogo completo de obrigações NIS2 mapeadas por artigos, com variações específicas por país. Acompanhe o estado de conformidade por obrigação e associe controlos e evidências.",
+      "features": ["Desdobramento artigo a artigo", "Variações por perfil de país", "Associação de controlos e evidências", "Pontuação de conformidade por obrigação"],
+      "screenshot": "Captura de ecrã — Obrigações"
+    },
+    "incident": {
+      "step": "Passo 3",
+      "title": "Fluxo de Reporte de Incidentes",
+      "desc": "A NIS2 impõe prazos rigorosos de reporte de incidentes. A Metis GRC automatiza o fluxo com prazos integrados, modelos de reporte à autoridade e acompanhamento do estado.",
+      "timeline": [
+        { "time": "24 horas", "label": "Alerta Precoce", "desc": "Notificação inicial à autoridade competente" },
+        { "time": "72 horas", "label": "Notificação de Incidente", "desc": "Avaliação detalhada incluindo gravidade e impacto" },
+        { "time": "1 mês", "label": "Relatório Final", "desc": "Análise de causa raiz e medidas de remediação" }
+      ],
+      "screenshot": "Captura de ecrã — Fluxo de Incidentes"
+    },
+    "cta": {
+      "title": "Inicie a Sua Avaliação NIS2",
+      "subtitle": "Determine a sua aplicabilidade e acompanhe a conformidade desde o primeiro dia."
+    }
+  },
+  "productFrameworks": {
+    "meta": {
+      "title": "Frameworks",
+      "description": "Suporte para NIS2, ISO 27001, NIST CSF 2.0, CIS Controls v8 e frameworks personalizados — tudo numa plataforma com mapeamento entre frameworks."
+    },
+    "hero": {
+      "title": "Uma Plataforma, Todos os Frameworks",
+      "subtitle": "Ative múltiplos frameworks de conformidade, mapeie controlos entre normas e elimine trabalho duplicado."
+    },
+    "supported": {
+      "title": "Frameworks Suportados",
+      "subtitle": "Ative os frameworks relevantes para a sua organização. Adicione mais à medida que os seus requisitos de conformidade evoluem.",
+      "frameworks": [
+        { "name": "Diretiva NIS2", "subtitle": "Diretiva UE 2022/2555", "desc": "Cibersegurança de infraestruturas críticas para entidades essenciais e importantes em toda a UE." },
+        { "name": "ISO 27001", "subtitle": "ISO/IEC 27001:2022", "desc": "Norma internacional para sistemas de gestão de segurança da informação (SGSI)." },
+        { "name": "NIST CSF 2.0", "subtitle": "Cybersecurity Framework", "desc": "Framework dos EUA para gestão de risco de cibersegurança nas funções Governar, Identificar, Proteger, Detetar, Responder, Recuperar." },
+        { "name": "CIS Controls v8", "subtitle": "Center for Internet Security", "desc": "Conjunto priorizado de salvaguardas para mitigar os ciberataques mais comuns." }
+      ],
+      "customNote": "Mais <strong>frameworks personalizados</strong> — construa os seus com o nosso construtor de frameworks."
+    },
+    "mapping": {
+      "title": "Mapeamento de Controlos entre Frameworks",
+      "desc": "Implemente um controlo uma vez, satisfaça requisitos em múltiplos frameworks. O mapeamento com IA identifica equivalências entre NIS2, ISO 27001, NIST CSF e CIS Controls — reduzindo o esforço em até 60%.",
+      "features": [
+        "Deteção automática de equivalências via IA",
+        "Painel visual de mapeamento",
+        "Identificação de lacunas de cobertura",
+        "Acompanhamento unificado de implementação de controlos"
+      ]
+    },
+    "cta": {
+      "title": "Ative os Seus Frameworks",
+      "subtitle": "Comece com um framework. Adicione mais à medida que cresce."
+    }
+  },
+  "productVendorRisk": {
+    "meta": {
+      "title": "Gestão de Risco de Fornecedores",
+      "description": "Avalie, pontue e monitorize o risco de terceiros com registos de fornecedores, questionários dinâmicos e pontuação de risco com IA."
+    },
+    "hero": {
+      "title": "Risco de Terceiros Sob Controlo",
+      "subtitle": "Avalie e monitorize continuamente a postura de segurança dos fornecedores com pontuação com IA e questionários automatizados."
+    },
+    "supplier": {
+      "title": "Registo de Fornecedores",
+      "desc": "Inventário centralizado de todos os fornecedores terceiros com classificação de criticidade, detalhes contratuais e perfis de risco. Filtre e priorize por nível de risco.",
+      "features": ["Níveis de criticidade (Crítico, Alto, Médio, Baixo)", "Acompanhamento de contratos e renovações", "Categorização de serviços", "Pontuação de risco por fornecedor"],
+      "screenshot": "Captura de ecrã — Registo de Fornecedores"
+    },
+    "questionnaires": {
+      "title": "Questionários Dinâmicos",
+      "desc": "Envie questionários de segurança personalizáveis aos fornecedores através de um portal seguro baseado em tokens. Os fornecedores respondem sem criar conta. Acompanhe a conclusão e reveja as respostas.",
+      "features": ["Biblioteca de modelos para avaliações comuns", "Perguntas multi-formato (texto, escolha, carregamento de ficheiro)", "Portal de fornecedores baseado em tokens (sem registo necessário)", "Lembretes automatizados e acompanhamento do estado"],
+      "screenshot": "Captura de ecrã — Questionários"
+    },
+    "scoring": {
+      "title": "Pontuação de Risco com IA",
+      "desc": "A IA analisa as respostas aos questionários, identifica fatores de risco e gera uma pontuação de risco composta. Compare fornecedores, acompanhe alterações de postura ao longo do tempo e associe riscos de fornecedores ao seu panorama de controlos.",
+      "features": ["Análise automatizada de respostas", "Identificação de fatores de risco", "Acompanhamento de tendências de postura", "Associado ao registo de risco empresarial"],
+      "screenshot": "Captura de ecrã — Pontuação de Risco com IA"
+    },
+    "cta": {
+      "title": "Avalie os Seus Fornecedores",
+      "subtitle": "Comece a gerir o risco de terceiros com avaliações com IA."
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Artigos sobre GRC de cibersegurança, conformidade NIS2, IA na governança e novidades do produto pela equipa Metis GRC."
+    },
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Artigos sobre GRC de cibersegurança, conformidade e novidades do produto."
+    },
+    "categories": {
+      "all": "Todos",
+      "nis2": "NIS2",
+      "iso27001": "ISO 27001",
+      "aiInGrc": "IA em GRC",
+      "productUpdates": "Novidades do Produto",
+      "industry": "Indústria"
+    },
+    "noPosts": "Ainda sem artigos. Fique atento!",
+    "by": "Por"
+  },
+  "blogPost": {
+    "backLink": "Voltar ao Blog",
+    "by": "Por"
+  },
+  "comparison": {
+    "capability": "Capacidade",
+    "metisGrc": "Metis GRC",
+    "spreadsheets": "Folhas de Cálculo",
+    "legacyGrc": "GRC Legado",
+    "rows": [
+      { "name": "Diretiva NIS2", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "ISO 27001", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "NIST CSF 2.0", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "CIS Controls v8", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "Frameworks Personalizados", "metis": true, "spreadsheets": true, "legacy": false },
+      { "name": "Mapeamento entre Frameworks", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "Assistentes com IA", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "Painéis em Tempo Real", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "Gestão de Risco de Fornecedores", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "Classificação Automática de Evidências", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "SaaS Multi-Tenant", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "Residência de Dados na UE", "metis": true, "spreadsheets": false, "legacy": false }
+    ]
   }
 }

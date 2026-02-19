@@ -1,6 +1,7 @@
 ---
 title: Cookie Policy
 lastUpdated: 2026-02-17
+locale: en
 ---
 
 # Cookie Policy

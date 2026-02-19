@@ -1,6 +1,11 @@
 {
   "nav": {
     "product": "Product",
+    "productOverview": "Overview",
+    "productAi": "AI Assistants",
+    "productNis2": "NIS2 Compliance",
+    "productFrameworks": "Frameworks",
+    "productVendorRisk": "Vendor Risk",
     "about": "About",
     "blog": "Blog",
     "contact": "Contact",
@@ -8,16 +13,508 @@
     "requestDemo": "Request Demo",
     "startTrial": "Start Free Trial"
   },
-  "hero": {
-    "badge": "Now Live — EU Hosted",
-    "title": "Unified Cybersecurity",
-    "titleHighlight": "GRC Platform",
-    "subtitle": "NIS2, ISO 27001, NIST CSF 2.0, CIS Controls — one platform, AI-powered. Simplify governance, risk, and compliance for your organization.",
-    "cta": "Start Free Trial",
-    "ctaSecondary": "Book a Demo"
-  },
   "footer": {
     "description": "Unified cybersecurity governance, risk, and compliance platform. AI-powered. EU-hosted.",
+    "euHosted": "EU Hosted",
+    "gdprCompliant": "GDPR Compliant",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "aboutUs": "About Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
     "copyright": "All rights reserved."
+  },
+  "cookie": {
+    "text": "We use cookies to improve your experience and analyze site traffic. See our",
+    "policyLink": "Cookie Policy",
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Simplify your cybersecurity GRC with Metis.",
+    "trial": "Start Free Trial",
+    "sales": "Contact Sales"
+  },
+  "404": {
+    "pageTitle": "Page Not Found",
+    "title": "Page Not Found",
+    "subtitle": "The page you're looking for doesn't exist or has been moved.",
+    "back": "Back to Home"
+  },
+  "home": {
+    "title": "Metis GRC",
+    "hero": {
+      "badge": "Now Live — EU Hosted",
+      "title": "Unified Cybersecurity",
+      "titleHighlight": "GRC Platform",
+      "subtitle": "NIS2, ISO 27001, NIST CSF 2.0, CIS Controls — one platform, AI-powered. Simplify governance, risk, and compliance for your organization.",
+      "cta": "Start Free Trial",
+      "ctaSecondary": "Book a Demo"
+    },
+    "dashboard": {
+      "compliance": "Compliance",
+      "openRisks": "Open Risks",
+      "controls": "Controls",
+      "vendors": "Vendors"
+    },
+    "socialProof": {
+      "euHosted": "EU Hosted",
+      "gdprCompliant": "GDPR Compliant",
+      "soc2Ready": "SOC 2 Ready",
+      "uptimeSla": "99.9% Uptime SLA"
+    },
+    "problem": {
+      "title": "The GRC Challenge",
+      "subtitle": "Organizations face growing regulatory complexity, yet most still rely on fragmented, manual processes.",
+      "cards": [
+        {
+          "title": "Regulatory Complexity",
+          "desc": "NIS2, ISO 27001, NIST, CIS — each with different requirements, controls, and reporting. Tracking them separately is unsustainable."
+        },
+        {
+          "title": "Scattered Tools",
+          "desc": "Spreadsheets, email threads, shared drives — GRC data lives everywhere. No single source of truth means gaps and audit failures."
+        },
+        {
+          "title": "Manual Compliance",
+          "desc": "Evidence collection, control assessments, risk scoring — hours of manual work. NIS2 demands 24h incident reporting. Manual can't keep up."
+        }
+      ]
+    },
+    "solution": {
+      "title": "One Platform. Complete GRC.",
+      "subtitle": "Metis GRC unifies frameworks, risks, controls, evidence, and reporting in a single AI-powered platform.",
+      "pills": [
+        { "label": "Multi-Framework Engine", "desc": "NIS2, ISO, NIST, CIS in one place" },
+        { "label": "AI Assistants", "desc": "9 AI assistants for every GRC task" },
+        { "label": "NIS2 Specialist", "desc": "Country-specific compliance wizard" },
+        { "label": "Vendor Risk", "desc": "Third-party assessment & scoring" }
+      ]
+    },
+    "features": {
+      "title": "Everything You Need",
+      "subtitle": "From risk registers to audit trails, Metis GRC covers the full compliance lifecycle.",
+      "cards": [
+        {
+          "title": "Risk Register",
+          "desc": "Enterprise, IT, vendor, and project risk registers with likelihood/impact scoring, heat maps, and treatment plans."
+        },
+        {
+          "title": "Control Library",
+          "desc": "Centralized controls mapped across frameworks. Track implementation status, link evidence, and identify gaps."
+        },
+        {
+          "title": "Evidence Repository",
+          "desc": "Upload, classify, and auto-link evidence to controls. AI-powered tagging and OCR for document processing."
+        },
+        {
+          "title": "Incident Management",
+          "desc": "NIS2-compliant workflows with 24h/72h reporting timelines. Track incidents from detection to resolution."
+        },
+        {
+          "title": "Compliance Dashboards",
+          "desc": "Executive and operational views. Real-time compliance scores, risk trends, and framework status at a glance."
+        },
+        {
+          "title": "Enterprise Admin",
+          "desc": "Multi-tenant architecture, SSO/SAML, RBAC with 10+ roles, audit logging, and API integrations."
+        }
+      ]
+    },
+    "ai": {
+      "title": "AI Everywhere",
+      "subtitle": "Nine AI assistants embedded across the platform — from regulatory Q&A to predictive compliance analysis.",
+      "assistants": [
+        { "title": "Regulatory Q&A", "desc": "Ask questions about frameworks in plain language. Get instant, referenced answers." },
+        { "title": "Control Explanation", "desc": "Understand what each control means and how to implement it in your context." },
+        { "title": "Assessment Assistance", "desc": "AI proposes maturity levels with justification based on your evidence." },
+        { "title": "Evidence Classification", "desc": "Auto-tag uploaded documents with relevant controls and sensitivity levels." },
+        { "title": "Cross-Framework Mapping", "desc": "Discover control equivalences across NIS2, ISO, NIST, and CIS automatically." },
+        { "title": "Remediation Planning", "desc": "Generate prioritized action plans with owners, effort estimates, and timelines." },
+        { "title": "Report Generation", "desc": "Draft board-ready executive summaries and compliance reports in minutes." },
+        { "title": "Risk Recommendations", "desc": "Context-aware risk identification based on your asset and control landscape." },
+        { "title": "Predictive Gap Analysis", "desc": "Early warning system for compliance degradation and emerging risk areas." }
+      ],
+      "learnMore": "Learn more about AI Assistants"
+    },
+    "comparison": {
+      "title": "Why Metis GRC?",
+      "subtitle": "See how a purpose-built GRC platform compares to traditional approaches."
+    },
+    "testimonials": {
+      "title": "Trusted by Security Leaders",
+      "items": [
+        { "quote": "Metis GRC transformed how we manage multi-framework compliance. What used to take weeks now takes hours.", "name": "Coming Soon", "role": "CISO" },
+        { "quote": "The AI assistants are a game-changer — especially for evidence classification and cross-framework mapping.", "name": "Coming Soon", "role": "GRC Manager" },
+        { "quote": "Finally, a platform built for NIS2 from the ground up. The incident reporting workflow alone saved us countless hours.", "name": "Coming Soon", "role": "Compliance Officer" }
+      ]
+    },
+    "ctaBanner": {
+      "title": "Ready to Simplify GRC?",
+      "subtitle": "Join organizations that trust Metis GRC for unified cybersecurity governance, risk, and compliance.",
+      "trial": "Start Free Trial",
+      "sales": "Talk to Sales"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Us",
+      "description": "Metis GRC is a cybersecurity startup building the future of governance, risk, and compliance. Based in Portugal, serving Europe."
+    },
+    "hero": {
+      "title": "Building the Future of Cybersecurity GRC",
+      "subtitle": "We're cybersecurity practitioners who lived the compliance challenges firsthand — and built Metis GRC to solve them."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "p1": "Organizations shouldn't have to choose between security and simplicity. We bridge the gap between regulatory complexity and operational reality with an AI-powered platform that makes cybersecurity GRC accessible, efficient, and actionable.",
+      "p2": "Metis GRC was born from the frustration of managing multi-framework compliance with spreadsheets, scattered tools, and manual processes. We believe there's a better way — and we're building it."
+    },
+    "values": {
+      "title": "What We Stand For",
+      "items": [
+        {
+          "title": "Security-First",
+          "desc": "We practice what we preach. Our platform is built with enterprise-grade security — encryption at rest and in transit, row-level isolation, and comprehensive audit logging."
+        },
+        {
+          "title": "AI-Driven",
+          "desc": "We believe AI should amplify human expertise, not replace it. Our nine assistants handle the heavy lifting so teams can focus on strategic decisions that matter."
+        },
+        {
+          "title": "European DNA",
+          "desc": "Built in Portugal, hosted in the EU, designed for European regulatory reality. We understand NIS2, GDPR, and the EU compliance landscape from the inside."
+        },
+        {
+          "title": "Customer-Obsessed",
+          "desc": "Every feature starts with a real problem faced by CISOs, GRC managers, and compliance officers. We build what practitioners actually need."
+        }
+      ]
+    },
+    "team": {
+      "title": "Our Team",
+      "p1": "Our team brings over <strong>20 years of cybersecurity experience</strong> across consulting, healthcare, financial services, utilities, and more. We've led GRC programs, managed compliance audits, responded to incidents, and assessed hundreds of vendors.",
+      "p2": "We've lived the compliance challenges firsthand — the endless spreadsheets, the duplicated work across frameworks, the scramble to meet reporting deadlines. Metis GRC is the platform we wished we had."
+    },
+    "location": {
+      "badge": "Based in Portugal",
+      "title": "Based in Portugal, Serving Europe",
+      "desc": "Our platform is hosted entirely within the European Union, ensuring full data residency compliance. Built for the European regulatory landscape, designed for global ambition."
+    },
+    "cta": {
+      "title": "Join Our Mission",
+      "subtitle": "Help organizations simplify cybersecurity governance, risk, and compliance."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Get in touch with Metis GRC — book a demo, ask questions, or explore partnership opportunities."
+    },
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Book a demo, ask questions, or explore how Metis GRC can help your organization."
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name *",
+      "namePlaceholder": "Your name",
+      "company": "Company *",
+      "companyPlaceholder": "Your company",
+      "email": "Email *",
+      "emailPlaceholder": "you@company.com",
+      "interest": "I'm interested in...",
+      "interestOptions": {
+        "demo": "Book a Demo",
+        "trial": "Start Free Trial",
+        "partnership": "Partnership",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your GRC needs...",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Portugal, European Union"
+    },
+    "quickStart": {
+      "title": "Quick Start",
+      "desc": "Want to jump right in? Start a free trial — no credit card required.",
+      "cta": "Start Free Trial"
+    },
+    "partners": {
+      "title": "For Partners",
+      "desc": "Interested in integration partnerships, reseller programs, or consulting collaborations? We'd love to hear from you."
+    }
+  },
+  "product": {
+    "meta": {
+      "title": "Product",
+      "description": "Explore the Metis GRC platform — unified framework engine, AI assistants, risk management, vendor assessment, and compliance dashboards."
+    },
+    "hero": {
+      "title": "Everything You Need for Cybersecurity GRC",
+      "subtitle": "A complete platform that unifies frameworks, risks, controls, evidence, and reporting — powered by AI."
+    },
+    "learnMore": "Learn more",
+    "screenshotAlt": "Screenshot",
+    "modules": [
+      {
+        "title": "Multi-Framework Engine",
+        "desc": "Enable NIS2, ISO 27001, NIST CSF 2.0, CIS Controls, or build custom frameworks. Map controls across standards, identify overlaps, and eliminate redundant work.",
+        "features": ["NIS2, ISO, NIST, CIS support", "Cross-framework control mapping", "Custom framework builder", "Obligation tracking"]
+      },
+      {
+        "title": "AI Assistants",
+        "desc": "Nine AI assistants embedded across the platform. From regulatory Q&A to predictive gap analysis — AI handles the heavy lifting so your team can focus on decisions.",
+        "features": ["Regulatory Q&A", "Evidence classification", "Cross-framework mapping", "Report generation"]
+      },
+      {
+        "title": "Risk & Control Management",
+        "desc": "Enterprise, IT, vendor, and project risk registers. Centralized control library with implementation tracking, evidence linking, and gap analysis.",
+        "features": ["Risk registers with scoring", "Treatment plan workflows", "Control status tracking", "Heat maps & dashboards"]
+      },
+      {
+        "title": "NIS2 Compliance",
+        "desc": "Purpose-built NIS2 module with country-specific applicability wizard, obligations catalog, incident workflows with 24h/72h reporting, and governance tracking.",
+        "features": ["Country-specific wizard", "Obligations catalog", "24h/72h incident workflow", "Governance tracking"]
+      },
+      {
+        "title": "Vendor Risk Management",
+        "desc": "Assess and monitor third-party risk with supplier registers, dynamic questionnaires, AI-powered risk scoring, and posture tracking linked to your controls.",
+        "features": ["Supplier register", "Dynamic questionnaires", "AI risk scoring", "Assessment workflows"]
+      },
+      {
+        "title": "Evidence & Audit",
+        "desc": "Upload, classify, and link evidence to controls. AI-powered tagging, OCR processing, and a complete audit trail for every action across the platform.",
+        "features": ["Evidence repository", "AI classification", "Multi-framework tagging", "Full audit trail"]
+      }
+    ]
+  },
+  "productAi": {
+    "meta": {
+      "title": "AI Assistants",
+      "description": "Nine AI assistants embedded across Metis GRC — regulatory Q&A, evidence classification, cross-framework mapping, and more."
+    },
+    "comingSoon": "Coming Soon",
+    "hero": {
+      "title": "AI-Powered GRC Intelligence",
+      "subtitle": "Nine assistants embedded across the platform. Your data stays in the EU. AI processes in-context only."
+    },
+    "assistants": [
+      {
+        "title": "Regulatory Q&A",
+        "desc": "Ask questions about any supported framework in plain language. Get instant answers with references to specific articles, controls, and obligations. No more searching through hundreds of pages of regulation.",
+        "example": "\"What are the NIS2 incident reporting requirements for essential entities in Germany?\""
+      },
+      {
+        "title": "Control Explanation",
+        "desc": "Understand what each control means in practical terms. The AI explains requirements, suggests implementation approaches, and provides examples tailored to your organization size and industry.",
+        "example": "\"Explain ISO 27001 A.8.2 and how it applies to a healthcare SaaS company.\""
+      },
+      {
+        "title": "Assessment Assistance",
+        "desc": "Upload your evidence and let AI propose maturity/compliance levels with detailed justification. Accelerate assessments from weeks to days while maintaining rigor and consistency.",
+        "example": "AI reviews your access control policy and suggests \"Partially Implemented\" with specific gaps identified."
+      },
+      {
+        "title": "Evidence Classification",
+        "desc": "Drop documents into the evidence repository and AI automatically tags them with relevant controls, frameworks, and sensitivity levels. OCR processing handles scanned documents.",
+        "example": "Upload a penetration test report → auto-tagged to 5 controls across NIS2 and ISO 27001."
+      },
+      {
+        "title": "Cross-Framework Mapping",
+        "desc": "Discover control equivalences across NIS2, ISO 27001, NIST CSF, and CIS Controls. Eliminate duplicate work by mapping a single control implementation to multiple framework requirements.",
+        "example": "NIS2 Art. 21(2)(a) ↔ ISO A.5.1 ↔ NIST GV.PO-01 ↔ CIS Control 1"
+      },
+      {
+        "title": "Remediation Planning",
+        "desc": "Generate prioritized action plans with suggested owners, effort estimates, and timelines. AI considers your current maturity, available resources, and regulatory deadlines.",
+        "example": "AI generates a 90-day NIS2 remediation plan with 23 tasks across 4 workstreams."
+      },
+      {
+        "title": "Report Generation",
+        "desc": "Draft board-ready executive summaries and detailed compliance reports in minutes. Choose from CISO dashboard views, audit preparation reports, or regulatory submission formats.",
+        "example": "Generate a 2-page board briefing on NIS2 readiness with risk highlights and action items."
+      },
+      {
+        "title": "Risk Recommendations",
+        "desc": "Based on your asset inventory, control landscape, and industry context, AI identifies risks you may not have considered. Suggests likelihood and impact scores with reasoning.",
+        "example": "AI identifies 3 supply chain risks based on your vendor questionnaire responses."
+      },
+      {
+        "title": "Predictive Gap Analysis",
+        "desc": "Early warning system that monitors compliance trends and predicts where degradation is likely. Alerts before controls expire, evidence becomes stale, or risks exceed thresholds.",
+        "example": "Alert: 4 controls predicted to fall below threshold in Q3 based on evidence expiry dates."
+      }
+    ],
+    "trust": {
+      "title": "Built for Enterprise Trust",
+      "items": [
+        { "title": "EU Data Residency", "desc": "All data processed and stored within the European Union." },
+        { "title": "Context-Only AI", "desc": "AI operates on your data only — no training on customer content." },
+        { "title": "Full Audit Trail", "desc": "Every AI interaction is logged for compliance and accountability." }
+      ]
+    },
+    "cta": {
+      "title": "AI Assistants — Coming Soon",
+      "subtitle": "Experience AI-powered GRC with a 14-day free trial."
+    }
+  },
+  "productNis2": {
+    "meta": {
+      "title": "NIS2 Compliance",
+      "description": "Purpose-built NIS2 compliance module with country-specific applicability, obligations catalog, and incident reporting workflows."
+    },
+    "hero": {
+      "title": "NIS2 Compliance Made Simple",
+      "subtitle": "From applicability assessment to incident reporting — the most comprehensive NIS2 module on the market."
+    },
+    "wizard": {
+      "step": "Step 1",
+      "title": "Country-Specific Applicability Wizard",
+      "desc": "A 5-step guided questionnaire determines your organization's NIS2 classification — essential entity, important entity, or not in scope. Considers country-specific transposition details.",
+      "features": ["Sector & sub-sector identification", "Size thresholds per country", "Essential vs. Important classification", "PDF applicability report"],
+      "screenshot": "Screenshot — NIS2 Wizard"
+    },
+    "obligations": {
+      "step": "Step 2",
+      "title": "Obligations Catalog",
+      "desc": "Complete catalog of NIS2 obligations mapped to articles, with country-specific variations. Track compliance status per obligation and link controls and evidence.",
+      "features": ["Article-by-article breakdown", "Country profile variations", "Control & evidence linking", "Compliance scoring per obligation"],
+      "screenshot": "Screenshot — Obligations"
+    },
+    "incident": {
+      "step": "Step 3",
+      "title": "Incident Reporting Workflow",
+      "desc": "NIS2 mandates strict incident reporting timelines. Metis GRC automates the workflow with built-in deadlines, authority reporting templates, and status tracking.",
+      "timeline": [
+        { "time": "24 hours", "label": "Early Warning", "desc": "Initial notification to competent authority" },
+        { "time": "72 hours", "label": "Incident Notification", "desc": "Detailed assessment including severity and impact" },
+        { "time": "1 month", "label": "Final Report", "desc": "Root cause analysis and remediation measures" }
+      ],
+      "screenshot": "Screenshot — Incident Workflow"
+    },
+    "cta": {
+      "title": "Start Your NIS2 Assessment",
+      "subtitle": "Determine your applicability and track compliance from day one."
+    }
+  },
+  "productFrameworks": {
+    "meta": {
+      "title": "Frameworks",
+      "description": "Support for NIS2, ISO 27001, NIST CSF 2.0, CIS Controls v8, and custom frameworks — all in one platform with cross-framework mapping."
+    },
+    "hero": {
+      "title": "One Platform, Every Framework",
+      "subtitle": "Enable multiple compliance frameworks, map controls across standards, and eliminate duplicate work."
+    },
+    "supported": {
+      "title": "Supported Frameworks",
+      "subtitle": "Enable the frameworks that matter to your organization. Add more as your compliance requirements evolve.",
+      "frameworks": [
+        { "name": "NIS2 Directive", "subtitle": "EU Directive 2022/2555", "desc": "Critical infrastructure cybersecurity for essential and important entities across the EU." },
+        { "name": "ISO 27001", "subtitle": "ISO/IEC 27001:2022", "desc": "International standard for information security management systems (ISMS)." },
+        { "name": "NIST CSF 2.0", "subtitle": "Cybersecurity Framework", "desc": "US framework for managing cybersecurity risk across Govern, Identify, Protect, Detect, Respond, Recover." },
+        { "name": "CIS Controls v8", "subtitle": "Center for Internet Security", "desc": "Prioritized set of safeguards to mitigate the most common cyber attacks." }
+      ],
+      "customNote": "Plus <strong>custom frameworks</strong> — build your own with our framework builder."
+    },
+    "mapping": {
+      "title": "Cross-Framework Control Mapping",
+      "desc": "Implement a control once, satisfy requirements across multiple frameworks. AI-powered mapping identifies equivalences between NIS2, ISO 27001, NIST CSF, and CIS Controls — reducing effort by up to 60%.",
+      "features": [
+        "Automatic equivalence detection via AI",
+        "Visual mapping dashboard",
+        "Coverage gap identification",
+        "Unified control implementation tracking"
+      ]
+    },
+    "cta": {
+      "title": "Enable Your Frameworks",
+      "subtitle": "Start with one framework. Add more as you grow."
+    }
+  },
+  "productVendorRisk": {
+    "meta": {
+      "title": "Vendor Risk Management",
+      "description": "Assess, score, and monitor third-party risk with supplier registers, dynamic questionnaires, and AI-powered risk scoring."
+    },
+    "hero": {
+      "title": "Third-Party Risk Under Control",
+      "subtitle": "Assess and continuously monitor vendor security posture with AI-powered scoring and automated questionnaires."
+    },
+    "supplier": {
+      "title": "Supplier Register",
+      "desc": "Centralized inventory of all third-party vendors with criticality classification, contract details, and risk profiles. Filter and prioritize by risk level.",
+      "features": ["Criticality levels (Critical, High, Medium, Low)", "Contract & renewal tracking", "Service categorization", "Risk score per vendor"],
+      "screenshot": "Screenshot — Supplier Register"
+    },
+    "questionnaires": {
+      "title": "Dynamic Questionnaires",
+      "desc": "Send customizable security questionnaires to vendors via a secure token-based portal. Vendors respond without creating an account. Track completion and review responses.",
+      "features": ["Template library for common assessments", "Multi-format questions (text, choice, file upload)", "Token-based vendor portal (no signup needed)", "Automated reminders & status tracking"],
+      "screenshot": "Screenshot — Questionnaires"
+    },
+    "scoring": {
+      "title": "AI-Powered Risk Scoring",
+      "desc": "AI analyzes questionnaire responses, identifies risk drivers, and generates a composite risk score. Compare vendors, track posture changes over time, and link vendor risks to your control landscape.",
+      "features": ["Automated response analysis", "Risk driver identification", "Posture trend tracking", "Linked to enterprise risk register"],
+      "screenshot": "Screenshot — AI Risk Scoring"
+    },
+    "cta": {
+      "title": "Assess Your Vendors",
+      "subtitle": "Start managing third-party risk with AI-powered assessments."
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Insights on cybersecurity GRC, NIS2 compliance, AI in governance, and product updates from the Metis GRC team."
+    },
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Insights on cybersecurity GRC, compliance, and product updates."
+    },
+    "categories": {
+      "all": "All",
+      "nis2": "NIS2",
+      "iso27001": "ISO 27001",
+      "aiInGrc": "AI in GRC",
+      "productUpdates": "Product Updates",
+      "industry": "Industry"
+    },
+    "noPosts": "No posts yet. Stay tuned!",
+    "by": "By"
+  },
+  "blogPost": {
+    "backLink": "Back to Blog",
+    "by": "By"
+  },
+  "comparison": {
+    "capability": "Capability",
+    "metisGrc": "Metis GRC",
+    "spreadsheets": "Spreadsheets",
+    "legacyGrc": "Legacy GRC",
+    "rows": [
+      { "name": "NIS2 Directive", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "ISO 27001", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "NIST CSF 2.0", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "CIS Controls v8", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "Custom Frameworks", "metis": true, "spreadsheets": true, "legacy": false },
+      { "name": "Cross-Framework Mapping", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "AI-Powered Assistants", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "Real-Time Dashboards", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "Vendor Risk Management", "metis": true, "spreadsheets": false, "legacy": true },
+      { "name": "Evidence Auto-Classification", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "Multi-Tenant SaaS", "metis": true, "spreadsheets": false, "legacy": false },
+      { "name": "EU Data Residency", "metis": true, "spreadsheets": false, "legacy": false }
+    ]
   }
 }

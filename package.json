@@ -13,6 +13,7 @@
     "@astrojs/sitemap": "^3.7.0",
     "@fontsource/inter": "^5.2.8",
     "@fontsource/roboto-mono": "^5.2.8",
+    "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",

@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductFrameworksPage from '../../../components/pages/ProductFrameworksPage.astro';
+import { useTranslations } from '../../../lib/i18n';
+const { t } = useTranslations(Astro.currentLocale);
+---
+<BaseLayout title={t('productFrameworks.title')}><ProductFrameworksPage /></BaseLayout>

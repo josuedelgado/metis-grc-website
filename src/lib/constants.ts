@@ -8,17 +8,17 @@ export const SITE = {
 
 export const NAV_LINKS = [
   {
-    label: 'Product',
+    labelKey: 'nav.product',
     href: '/product',
     children: [
-      { label: 'Overview', href: '/product' },
-      { label: 'AI Copilots', href: '/product/ai' },
-      { label: 'NIS2 Compliance', href: '/product/nis2' },
-      { label: 'Frameworks', href: '/product/frameworks' },
-      { label: 'Vendor Risk', href: '/product/vendor-risk' },
+      { labelKey: 'nav.productOverview', href: '/product' },
+      { labelKey: 'nav.productAi', href: '/product/ai' },
+      { labelKey: 'nav.productNis2', href: '/product/nis2' },
+      { labelKey: 'nav.productFrameworks', href: '/product/frameworks' },
+      { labelKey: 'nav.productVendorRisk', href: '/product/vendor-risk' },
     ],
   },
-  { label: 'About', href: '/about' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/contact' },
+  { labelKey: 'nav.about', href: '/about' },
+  { labelKey: 'nav.blog', href: '/blog' },
+  { labelKey: 'nav.contact', href: '/contact' },
 ] as const;

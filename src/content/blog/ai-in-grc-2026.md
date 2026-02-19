@@ -1,9 +1,11 @@
 ---
 title: "How AI is Transforming GRC in 2026"
-description: "From evidence classification to predictive compliance — how AI copilots are reshaping governance, risk, and compliance."
+description: "From evidence classification to predictive compliance — how AI assistants are reshaping governance, risk, and compliance."
 date: 2026-02-15
 author: Metis GRC Team
 category: AI in GRC
+draft: true
+locale: en
 ---
 
 The governance, risk, and compliance landscape is undergoing a fundamental transformation. AI is no longer a future promise — it's a present-day tool that's reshaping how organizations manage compliance.
@@ -14,7 +16,7 @@ Manual GRC processes are slow, error-prone, and don't scale. Assessment cycles t
 
 ## How AI Changes the Game
 
-AI copilots embedded within GRC platforms can automate the most time-consuming tasks while maintaining the rigor and accuracy that compliance demands.
+AI assistants embedded within GRC platforms can automate the most time-consuming tasks while maintaining the rigor and accuracy that compliance demands.
 
 ### 1. Automated Evidence Classification
 

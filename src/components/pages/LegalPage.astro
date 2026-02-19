@@ -1,0 +1,29 @@
+---
+import { getEntry, render } from 'astro:content';
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+const locale = Astro.currentLocale ?? 'en';
+
+// Try locale-specific slug first (e.g. "privacy-pt"), then fall back to base slug
+let entry = null;
+if (locale !== 'en') {
+  entry = await getEntry('legal', `${slug}-${locale}`);
+}
+if (!entry) {
+  entry = await getEntry('legal', slug);
+}
+
+const { Content } = await render(entry!);
+---
+
+<article class="py-16 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="prose prose-lg max-w-none prose-headings:text-text-primary prose-p:text-text-muted prose-a:text-primary prose-strong:text-text-primary prose-ul:text-text-muted prose-li:marker:text-primary prose-hr:border-border">
+      <Content />
+    </div>
+  </div>
+</article>

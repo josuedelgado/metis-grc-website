@@ -1,0 +1,65 @@
+---
+import PageHero from '../shared/PageHero.astro';
+import CTASection from '../shared/CTASection.astro';
+import AnimatedSection from '../shared/AnimatedSection.tsx';
+import { useTranslations } from '../../lib/i18n';
+
+const { t, td } = useTranslations(Astro.currentLocale);
+
+const assistants = td<{ title: string; desc: string; example: string }[]>('productAi.assistants');
+const trustItems = td<{ title: string; desc: string }[]>('productAi.trust.items');
+---
+
+<PageHero title={t('productAi.hero.title')} subtitle={t('productAi.hero.subtitle')} dark>
+  <span class="inline-flex items-center gap-1.5 bg-warning/10 text-warning border border-warning/20 rounded-full px-3 py-1 text-xs font-semibold mt-4">
+    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    {t('productAi.comingSoon')}
+  </span>
+</PageHero>
+
+<section class="py-20 bg-background">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {assistants.map((ai: { title: string; desc: string; example: string }, i: number) => (
+        <AnimatedSection client:visible delay={i * 0.06}>
+          <div class="bg-white rounded-[12px] p-6 shadow-card hover:shadow-card-hover transition-shadow h-full flex flex-col">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-8 h-8 rounded-lg bg-secondary-50 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-base font-semibold text-text-primary">{ai.title}</h3>
+            </div>
+            <p class="text-sm text-text-muted leading-relaxed mb-4 flex-1">{ai.desc}</p>
+            <div class="bg-primary-50/50 rounded-lg p-3 border border-primary-100">
+              <p class="text-xs text-primary-700 font-mono leading-relaxed">{ai.example}</p>
+            </div>
+          </div>
+        </AnimatedSection>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Trust section -->
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <AnimatedSection client:visible>
+      <h2 class="text-2xl font-bold text-text-primary mb-6">{t('productAi.trust.title')}</h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        {trustItems.map((item) => (
+          <div class="text-center">
+            <div class="w-10 h-10 rounded-full bg-success-50 flex items-center justify-center mx-auto mb-3">
+              <svg class="w-5 h-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            </div>
+            <h3 class="text-sm font-semibold text-text-primary mb-1">{item.title}</h3>
+            <p class="text-xs text-text-muted">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </AnimatedSection>
+  </div>
+</section>
+
+<CTASection title={t('productAi.cta.title')} subtitle={t('productAi.cta.subtitle')} />

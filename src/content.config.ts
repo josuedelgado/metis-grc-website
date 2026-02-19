@@ -11,6 +11,8 @@ const blog = defineCollection({
     category: z.enum(['NIS2', 'ISO 27001', 'AI in GRC', 'Product Updates', 'Industry']),
     image: z.string().optional(),
     draft: z.boolean().default(false),
+    locale: z.enum(['en', 'pt']).default('en'),
+    translationOf: z.string().optional(),
   }),
 });
 
@@ -19,6 +21,7 @@ const legal = defineCollection({
   schema: z.object({
     title: z.string(),
     lastUpdated: z.coerce.date(),
+    locale: z.enum(['en', 'pt']).default('en'),
   }),
 });
 

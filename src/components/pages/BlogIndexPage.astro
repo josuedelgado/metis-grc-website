@@ -1,0 +1,62 @@
+---
+import PageHero from '../shared/PageHero.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations, localizeHref } from '../../lib/i18n';
+
+const { t, td } = useTranslations(Astro.currentLocale);
+const locale = Astro.currentLocale;
+const currentLocale = Astro.currentLocale ?? 'en';
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft && (post.data.locale ?? 'en') === currentLocale)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const categoryLabels = td<Record<string, string>>('blog.categories');
+const categories = Object.values(categoryLabels);
+---
+
+<PageHero title={t('blog.hero.title')} subtitle={t('blog.hero.subtitle')} />
+
+<section class="py-16 bg-background">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Category Filter -->
+    <div class="flex flex-wrap gap-2 mb-10">
+      {categories.map((cat) => (
+        <button
+          class="text-sm px-4 py-1.5 rounded-full border border-border bg-white text-text-muted hover:text-primary hover:border-primary/30 transition-colors"
+          data-category={cat}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map((post) => (
+        <article class="bg-white rounded-[12px] shadow-card hover:shadow-card-hover transition-shadow overflow-hidden" data-post-category={post.data.category}>
+          <div class="aspect-video bg-gradient-to-br from-primary-50 to-secondary-50 flex items-center justify-center">
+            <span class="text-xs text-text-muted">{post.data.category}</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-xs bg-primary-50 text-primary-700 rounded-full px-2.5 py-0.5 font-medium">{post.data.category}</span>
+              <span class="text-xs text-text-muted">{post.data.date.toLocaleDateString(locale === 'pt' ? 'pt-PT' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+            </div>
+            <h2 class="text-base font-semibold text-text-primary mb-2 line-clamp-2">
+              <a href={localizeHref(`/blog/${post.id}`, locale)} class="hover:text-primary transition-colors">{post.data.title}</a>
+            </h2>
+            <p class="text-sm text-text-muted line-clamp-3">{post.data.description}</p>
+            <div class="mt-4 pt-3 border-t border-border">
+              <span class="text-xs text-text-muted">{post.data.author}</span>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    {posts.length === 0 && (
+      <div class="text-center py-16">
+        <p class="text-text-muted">{t('blog.noPosts')}</p>
+      </div>
+    )}
+  </div>
+</section>

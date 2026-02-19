@@ -1,13 +1,16 @@
 ---
 import { NAV_LINKS, SITE } from '../../lib/constants';
+import { useTranslations, localizeHref } from '../../lib/i18n';
 
+const { t } = useTranslations(Astro.currentLocale);
 const currentPath = Astro.url.pathname;
+const locale = Astro.currentLocale;
 ---
 
 <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-border">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
     <!-- Logo -->
-    <a href="/" class="flex items-center gap-2.5 shrink-0">
+    <a href={localizeHref('/', locale)} class="flex items-center gap-2.5 shrink-0">
       <div class="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
         <span class="text-sm font-bold text-white">MG</span>
       </div>
@@ -19,13 +22,13 @@ const currentPath = Astro.url.pathname;
       {NAV_LINKS.map((link) => (
         <div class="relative group">
           <a
-            href={link.href}
+            href={localizeHref(link.href, locale)}
             class:list={[
               'text-sm font-medium transition-colors hover:text-primary',
-              currentPath.startsWith(link.href) ? 'text-primary' : 'text-text-muted',
+              currentPath.startsWith(link.href) || currentPath.startsWith(`/pt${link.href}`) ? 'text-primary' : 'text-text-muted',
             ]}
           >
-            {link.label}
+            {t(link.labelKey)}
             {'children' in link && (
               <svg class="inline-block ml-1 w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path d="M19 9l-7 7-7-7" />
@@ -37,10 +40,10 @@ const currentPath = Astro.url.pathname;
               <div class="bg-white rounded-xl shadow-xl border border-border py-2 min-w-[200px]">
                 {link.children.map((child) => (
                   <a
-                    href={child.href}
+                    href={localizeHref(child.href, locale)}
                     class="block px-4 py-2 text-sm text-text-muted hover:text-primary hover:bg-primary-50 transition-colors"
                   >
-                    {child.label}
+                    {t(child.labelKey)}
                   </a>
                 ))}
               </div>
@@ -56,13 +59,13 @@ const currentPath = Astro.url.pathname;
         href={`${SITE.appUrl}/login`}
         class="text-sm font-medium text-text-muted hover:text-primary transition-colors px-4 py-2"
       >
-        Sign In
+        {t('nav.signIn')}
       </a>
       <a
-        href="/contact"
+        href={localizeHref('/contact', locale)}
         class="text-sm font-medium text-white bg-primary hover:bg-primary-600 transition-colors px-5 py-2 rounded-lg"
       >
-        Request Demo
+        {t('nav.requestDemo')}
       </a>
     </div>
 
@@ -84,19 +87,19 @@ const currentPath = Astro.url.pathname;
       {NAV_LINKS.map((link) => (
         <div>
           <a
-            href={link.href}
+            href={localizeHref(link.href, locale)}
             class="block text-sm font-medium text-text-primary py-2"
           >
-            {link.label}
+            {t(link.labelKey)}
           </a>
           {'children' in link && link.children && (
             <div class="pl-4 space-y-1">
               {link.children.map((child) => (
                 <a
-                  href={child.href}
+                  href={localizeHref(child.href, locale)}
                   class="block text-sm text-text-muted py-1.5"
                 >
-                  {child.label}
+                  {t(child.labelKey)}
                 </a>
               ))}
             </div>
@@ -104,8 +107,8 @@ const currentPath = Astro.url.pathname;
         </div>
       ))}
       <div class="pt-3 border-t border-border space-y-2">
-        <a href={`${SITE.appUrl}/login`} class="block text-sm font-medium text-text-muted py-2">Sign In</a>
-        <a href="/contact" class="block text-center text-sm font-medium text-white bg-primary rounded-lg py-2.5">Request Demo</a>
+        <a href={`${SITE.appUrl}/login`} class="block text-sm font-medium text-text-muted py-2">{t('nav.signIn')}</a>
+        <a href={localizeHref('/contact', locale)} class="block text-center text-sm font-medium text-white bg-primary rounded-lg py-2.5">{t('nav.requestDemo')}</a>
       </div>
     </div>
   </div>

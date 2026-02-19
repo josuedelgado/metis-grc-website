@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
 lastUpdated: 2026-02-17
+locale: en
 ---
 
 # Privacy Policy

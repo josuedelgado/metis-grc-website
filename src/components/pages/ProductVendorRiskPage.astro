@@ -1,0 +1,85 @@
+---
+import PageHero from '../shared/PageHero.astro';
+import CTASection from '../shared/CTASection.astro';
+import AnimatedSection from '../shared/AnimatedSection.tsx';
+import { useTranslations } from '../../lib/i18n';
+
+const { t, td } = useTranslations(Astro.currentLocale);
+
+const supplierFeatures = td<string[]>('productVendorRisk.supplier.features');
+const questionnaireFeatures = td<string[]>('productVendorRisk.questionnaires.features');
+const scoringFeatures = td<string[]>('productVendorRisk.scoring.features');
+---
+
+<PageHero title={t('productVendorRisk.hero.title')} subtitle={t('productVendorRisk.hero.subtitle')} dark />
+
+<section class="py-20 bg-background">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+    <!-- Supplier Register -->
+    <AnimatedSection client:visible>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl font-bold text-text-primary mb-3">{t('productVendorRisk.supplier.title')}</h2>
+          <p class="text-text-muted leading-relaxed mb-4">{t('productVendorRisk.supplier.desc')}</p>
+          <ul class="space-y-2">
+            {supplierFeatures.map((f) => (
+              <li class="flex items-center gap-2 text-sm text-text-primary">
+                <svg class="w-4 h-4 text-success shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                {f}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl border border-border shadow-card p-4">
+          <img src="/images/screenshots/vendor-risk.png" alt={t('productVendorRisk.supplier.screenshot')} class="rounded-xl w-full" loading="lazy" />
+        </div>
+      </div>
+    </AnimatedSection>
+
+    <!-- Questionnaires -->
+    <AnimatedSection client:visible>
+      <div class="grid md:grid-cols-2 gap-8 items-center md:grid-flow-dense">
+        <div class="md:col-start-2">
+          <h2 class="text-2xl font-bold text-text-primary mb-3">{t('productVendorRisk.questionnaires.title')}</h2>
+          <p class="text-text-muted leading-relaxed mb-4">{t('productVendorRisk.questionnaires.desc')}</p>
+          <ul class="space-y-2">
+            {questionnaireFeatures.map((f) => (
+              <li class="flex items-center gap-2 text-sm text-text-primary">
+                <svg class="w-4 h-4 text-success shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                {f}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="md:col-start-1 bg-white rounded-2xl border border-border shadow-card p-4">
+          <img src="/images/screenshots/policies.png" alt={t('productVendorRisk.questionnaires.screenshot')} class="rounded-xl w-full" loading="lazy" />
+        </div>
+      </div>
+    </AnimatedSection>
+
+    <!-- AI Scoring -->
+    <AnimatedSection client:visible>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl font-bold text-text-primary mb-3">{t('productVendorRisk.scoring.title')}</h2>
+          <p class="text-text-muted leading-relaxed mb-4">{t('productVendorRisk.scoring.desc')}</p>
+          <ul class="space-y-2">
+            {scoringFeatures.map((f) => (
+              <li class="flex items-center gap-2 text-sm text-text-primary">
+                <svg class="w-4 h-4 text-success shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                {f}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl border border-border shadow-card p-4">
+          <img src="/images/screenshots/evidence.png" alt={t('productVendorRisk.scoring.screenshot')} class="rounded-xl w-full" loading="lazy" />
+        </div>
+      </div>
+    </AnimatedSection>
+
+  </div>
+</section>
+
+<CTASection title={t('productVendorRisk.cta.title')} subtitle={t('productVendorRisk.cta.subtitle')} />

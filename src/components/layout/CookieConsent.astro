@@ -1,4 +1,8 @@
 ---
+import { useTranslations, localizeHref } from '../../lib/i18n';
+
+const { t } = useTranslations(Astro.currentLocale);
+const locale = Astro.currentLocale;
 ---
 
 <div id="cookie-consent" class="fixed bottom-0 left-0 right-0 z-50 hidden">
@@ -6,16 +10,16 @@
     <div class="bg-panel-dark rounded-xl shadow-xl border border-white/10 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
       <div class="flex-1">
         <p class="text-sm text-gray-300">
-          We use cookies to improve your experience and analyze site traffic. See our
-          <a href="/legal/cookies" class="text-secondary hover:underline">Cookie Policy</a>.
+          {t('cookie.text')}
+          <a href={localizeHref('/legal/cookies', locale)} class="text-secondary hover:underline">{t('cookie.policyLink')}</a>.
         </p>
       </div>
       <div class="flex gap-3 shrink-0">
         <button id="cookie-decline" class="text-sm text-gray-400 hover:text-white px-4 py-2 transition-colors">
-          Decline
+          {t('cookie.decline')}
         </button>
         <button id="cookie-accept" class="text-sm bg-primary hover:bg-primary-600 text-white px-5 py-2 rounded-lg transition-colors font-medium">
-          Accept
+          {t('cookie.accept')}
         </button>
       </div>
     </div>

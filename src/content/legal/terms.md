@@ -1,6 +1,7 @@
 ---
 title: Terms of Service
 lastUpdated: 2026-02-17
+locale: en
 ---
 
 # Terms of Service
