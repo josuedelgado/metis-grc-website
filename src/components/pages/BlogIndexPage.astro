@@ -33,9 +33,13 @@ const categories = Object.values(categoryLabels);
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {posts.map((post) => (
         <article class="bg-white rounded-[12px] shadow-card hover:shadow-card-hover transition-shadow overflow-hidden" data-post-category={post.data.category}>
-          <div class="aspect-video bg-gradient-to-br from-primary-50 to-secondary-50 flex items-center justify-center">
-            <span class="text-xs text-text-muted">{post.data.category}</span>
-          </div>
+          {post.data.image ? (
+            <img src={post.data.image} alt={post.data.title} class="aspect-video w-full object-cover" loading="lazy" />
+          ) : (
+            <div class="aspect-video bg-gradient-to-br from-primary-50 to-secondary-50 flex items-center justify-center">
+              <span class="text-xs text-text-muted">{post.data.category}</span>
+            </div>
+          )}
           <div class="p-6">
             <div class="flex items-center gap-2 mb-3">
               <span class="text-xs bg-primary-50 text-primary-700 rounded-full px-2.5 py-0.5 font-medium">{post.data.category}</span>

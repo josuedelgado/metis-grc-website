@@ -4,6 +4,7 @@ description: "Compreenda os requisitos da NIS2, a sua aplicabilidade e como cons
 date: 2026-02-19
 author: Equipa Metis GRC
 category: NIS2
+image: /images/blog/nis2-compliance-guide.png
 locale: pt
 ---
 

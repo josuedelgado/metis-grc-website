@@ -4,6 +4,7 @@ description: "Understand NIS2 requirements, applicability, and how to build a co
 date: 2026-02-10
 author: Metis GRC Team
 category: NIS2
+image: /images/blog/nis2-compliance-guide.png
 locale: en
 ---
 
