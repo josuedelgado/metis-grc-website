@@ -81,3 +81,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ── Cookiebot Banner Overrides ── */
+#CybotCookiebotDialog {
+  max-width: 480px !important;
+  font-family: var(--font-sans) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-xl) !important;
+}
+
+#CybotCookiebotDialogBodyContentText {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll,
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+  font-size: 13px !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+}
+
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+  background-color: var(--color-primary) !important;
+}
+
+#CybotCookiebotDialogPoweredbyLink {
+  display: none !important;
+}
